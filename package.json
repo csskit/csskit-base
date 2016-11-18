@@ -1,0 +1,35 @@
+{
+  "name": "csskit-base",
+  "version": "1.0.0",
+  "description": "Simple base styles built on top of normalize.css and open-color",
+  "style": "style.css",
+  "scripts": {
+    "bundle": "csskit bundle source.css > style.css",
+    "git": "git add bundle.js && git commit -m 'bundle css'",
+    "prerelease": "npm run bundle && npm run git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csskit/csskit-base.git"
+  },
+  "keywords": [
+    "css",
+    "base",
+    "normalize.css",
+    "modular css",
+    "functional css"
+  ],
+  "author": "sethvincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csskit/csskit-base/issues"
+  },
+  "homepage": "https://github.com/csskit/csskit-base#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "open-color": "^1.4.0"
+  },
+  "devDependencies": {
+    "csskit-cli": "^1.0.2"
+  }
+}
